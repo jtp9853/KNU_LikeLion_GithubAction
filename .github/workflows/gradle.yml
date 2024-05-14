@@ -39,7 +39,7 @@ jobs:
     - name: Copy files to server
       uses: appleboy/scp-action@master
       with:
-        host: 172.26.3.182
+        host: 52.78.220.100
         username: ubuntu
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         port: 22
@@ -49,7 +49,7 @@ jobs:
     - name: Restarting Server
       uses: appleboy/ssh-action@master
       with:
-        host: 172.26.3.182
+        host: 52.78.220.100
         username: ubuntu
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         script: |
